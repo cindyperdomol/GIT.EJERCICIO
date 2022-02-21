@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arreglos</title>
+</head>
+<body>
+    <script>
+
+var inicio = [ "unacadena" , 3 , 9 , 1 , 10 , 500 , 1 , 10 , true ] ;
+var  nuevaArray  =  [ ] ;
+
+//funcion para solo numeros
+function soloNumeros(array){
+  var solonumeros = [];
+  for (var i = 0; i < array.length; i++) {
+    if (typeof(array[i])=="number") { 
+
+       solonumeros.push(array[i]);
+    }; 
+  }
+ return solonumeros;
+}  
+
+//console.log(soloNumeros(inicio));
+
+
+//orden de numeros
+function  ordenarNumeros( array ) {
+    for ( i = 0 ; i < array.length; i++ ) {  
+        for  ( j = i  ;  j  <  array.length ;  j ++ ) {
+        if ( array [ i ] <  array [ j ] ) {
+            x  =  array [ j ] ;
+            array [ j ]  =  array [ i ] ;
+            array [ i ]  =  x ;
+        }
+        }
+
+    }
+    console.log ( arreglo ) ;
+}
+
+
+ordenarNumeros ( nuevoArray ) ;
+   
+
+
+ 
+ 
+ 
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
