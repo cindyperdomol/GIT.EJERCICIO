@@ -10,31 +10,23 @@
     <script>
 
 var inicio = [ "unacadena" , 3 , 9 , 1 , 10 , 500 , 1 , 10 , true ] ;
-var  nuevaArray  =  [ ] ;
+
 
 //funcion para solo numeros
 
-function soloNumeros(array){
-  var solonumeros = [];
-  for (var i = 0; i < array.length; i++) {
-    if (typeof(array[i])=="number") { 
 
-       solonumeros.push(array[i]);
-    }; 
-  }
- return solonumeros;
-}  
+let soloNumeros = inicio . filter(numero =>  Number.isInteger(numero));
 
-console.log(soloNumeros(inicio));
+ console.log(soloNumeros);
 
 
 //orden de numeros
-function ordenarNumeros(inicio)  {
+function ordenarNumeros(soloNumeros)  {
 let arreglo = [];
-let numMax = inicio [0];
+let numMax = soloNumeros[0];
  
-    for ( i = 0; i < inicio.length; i++) {
-      arreglo.push (inicio [i]);
+    for ( i = 0; i < soloNumeros.length; i++) {
+      arreglo.push (soloNumeros [i]);
     }
     console.log (numMax);
     let datosOrden = arreglo.length;
@@ -54,7 +46,7 @@ let numMax = inicio [0];
 
 return arreglo ;
 }
-console.log ( `numeros ordenados de mayor a menor ${  ordenarNumeros (inicio ) } ` ) ;
+console.log ( ordenarNumeros (soloNumeros ) ) ;
     </script>
     
 </body>
