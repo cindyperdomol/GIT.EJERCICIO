@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+function  palíndrome ( )  {
+        let  cadena  =  prompt ( "Introduce una palabra para comprobar si es un palindromo o no" ) ;
+        let  palabra  =  cadena .  Minúsculas ( ) . reemplazar ( /\s/g , "" ) ;
+        let  alreves  =  palabra . dividir ( "" ) . inversa ( ) . unirse ( "" ) ;
+        if ( palabra  ==  alreves ) {
+            console.log ( `La cadena es un palíndromo` ) ;
+        } else {
+            console.log ( `La cadena no es un palíndromo` ) ;
+        }
+        
+    }
+    palíndrome ( ) ;
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

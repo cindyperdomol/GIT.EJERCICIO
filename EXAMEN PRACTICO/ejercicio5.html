@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio 5</title>
+</head>
+<body>
+    <script>
+class persona {
+    nombre ;
+    edad ;
+    constructor ( nombre ,  edad )  {
+      this.nombre  =  nombre ;
+      this.edad  =  edad ;
+    }
+
+    obtDetalles ( )  {
+      console.log ( this . nombre ,  this . edad ) ;
+    }
+  }
+
+  const  persona1  =  new persona ( "Juan" ,  32 ) ;
+  persona1 . obtDetalles ( ) ;
+
+  //5.2
+  class  Estudiante extends persona   {
+    constructor ( nombre ,  edad ,  calificacion  =  0 )  {
+      super ( nombre ,  edad ) ;
+      this.calificacion  =  calificacion ;
+    }
+    obtDetalles ( )  {
+      console.log ( this . nombre ,  this . edad ,  this . calificación ) ;
+    }
+  }
+
+  const  estudiante1  =  new Estudiante ( "sandra" ,  28 ) ;
+  estudiante1 . obtDetalles ( ) ;
+
+  //5.3
+  class Profesor extends persona {
+    constructor ( nombre ,  edad ,  asignatura  =  "JS" ,  nivel  =  "Basico" )  {
+      super( nombre ,  edad ) ;
+      this.asignatura  =  asignatura ;
+      this.nivel  =  nivel ;
+    }
+
+    obtDetalles ( )  {
+      console.log( this . nombre ,  this . edad ,  this . asignatura ,  this . nivel ) ;
+    }
+  }
+
+  const  profesor1  =  new Profesor ( "Víctor" ,  32 ) ;
+  profesor1 . obtDetalles ( ) ;
+
+  const  profesor2  =  new Profesor ( "Hugo" ,  32 ,  "Java" ,  "Senior" ) ;
+  profesor2 . obtDetalles ( ) ;
+
+  //5.4
+  class  grupo  {
+    profesor  =  { } ;
+    media ;
+    estudiantes  =  [ ] ;
+
+    constructor ( profesor ,  estudiantes )  {
+      this.profesor =  profesor ;
+      this.estudiantes  =  estudiantes ;
+    }
+
+    calificar ( )  {
+      for  ( var i  =  0 ;  i  <  this . estudiantes . length ;  i ++ )  {
+        this.estudiantes [ yo ] . calificacion  =  Math.random ( )  *  10 ;
+        console.log( this . estudiantes [ i ] . calificación ) ;
+      }
+    }
+
+    calcPromedio ( )  {
+      this.calificar ( ) ;
+      let contador  =  0 ;
+      let sum = 0 ;
+      for  ( let  j  =  0 ;  j  <  this . estudiantes . length ;  j ++ )  {
+        sum  =  sum  +  esto . estudiantes [ j ] . calificacion ;
+        contador  =  j  +  1 ;
+      }
+      this.promedio  =  sum  /  contador ;
+      console.log ( this .promedio ) ; _
+    }
+
+    obtenerDetalles ( )  {
+      this.calcPromedio ( ) ;
+      console.log ( `Detalles del Profesor:` ) ;
+      for ( const  detalle of object.keys ( this . profesor ) )  {
+        console.log ( ` ${ detalle } : ${ este . profesor [ detalle ] } ` ) ;
+      }
+
+      console.log ( "Detalles de los Estudiantes" ) ;
+      for  ( const  detalle  of  Object.keys( this . estudiantes ) )  {
+        for  ( const  propiedad of objetos.keys( this . estudiantes [ detalle ] ) )  {
+          console.log ( ` ${ propiedad }  ${ this . estudiantes [ detalle ] [ propiedad ] } ` ) ;
+        }
+      }
+
+      console.log ( ` PROMEDIO GENERAL DEL GRUPO: ${ this .promedio } ` ) ;
+    }
+  }
+
+  //5.5
+
+  const  estudiante2  =  new Estudiante ( "José" ,  15 ) ;
+  const  estudiante3  =  new Estudiante ( "Wilfridó" ,  22 ) ;
+  const  estudiante4  =  new Estudiante ( "Griselda" ,  40 ) ;
+  const  estudiante5  =  new Estudiante ( "sandra" ,  26 ) ;
+  const  estudiante6  =  new Estudiante ( "Ingrid" ,  22 ) ;
+
+  const  arrayEstudiantes  =  [
+    estudiante1 ,
+    estudiante2 ,
+    estudiante3 ,
+    estudiante4 ,
+    estudiante5 ,
+    estudiante6 ,
+  ] ;
+
+  const  grupo1  =  new  Grupo ( profesor1 ,  arrayEstudiantes ) ;
+  grupo1 . obtenerdetalles ( ) ;
+
+  
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
