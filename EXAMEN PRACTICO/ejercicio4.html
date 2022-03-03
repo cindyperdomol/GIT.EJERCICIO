@@ -11,8 +11,8 @@
 
 function  palíndrome ( )  {
         let  cadena  =  prompt ( "Introduce una palabra para comprobar si es un palindromo o no" ) ;
-        let  palabra  =  cadena .  Minúsculas ( ) . reemplazar ( /\s/g , "" ) ;
-        let  alreves  =  palabra . dividir ( "" ) . inversa ( ) . unirse ( "" ) ;
+        let  palabra  =  cadena .  toUpperCase ( ) . replace ( /\s/g , "" ) ;
+        let  alreves  =  palabra . split ( "" ) . reverse ( ) . join ( "" ) ;
         if ( palabra  ==  alreves ) {
             console.log ( `La cadena es un palíndromo` ) ;
         } else {
