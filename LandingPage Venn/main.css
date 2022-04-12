@@ -1,0 +1,224 @@
+* {
+  
+    --negroVenn: #002b39;
+}
+
+html{
+    font-family: 'Hind', Helvetica, Arial, Lucida, sans-serif;
+}
+
+body{
+ margin: 0px;
+ padding: 0px;
+}
+
+#seccionPrincipal {
+height: 120vh;
+background-image: url(IMG/Grupo\ 9213.webp);
+width: 100%;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+h1{
+  text-align: center;
+  color: var(--blackVenn);
+  font-size: 35px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style:normal;
+ letter-spacing: normal;
+}
+p{
+   font-weight: 300;
+   size:18 px;
+   line-height: 23px;
+   text-align: center;
+
+}
+span{
+  color: #1489ff;
+  font: weight 80px;;
+}
+
+button{
+    display: block;
+    margin: auto;
+    padding: 15px 45px 16px 46px;
+    object-fit: contain;
+    box-shadow: 0 9px 12px 0 rgb (26 72 100 / 16%);
+    background-image: linear-gradient(to top, #024d97, #0395d3 -10%);
+    color: aliceblue;
+    border-radius: 8px;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border-color: aliceblue;
+    margin-bottom: 100px;
+    
+    
+  
+}
+#logoVen{
+    
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    padding-top: 50px;
+ 
+}
+
+.targeta-andrea{
+   border: 1px solid gray;
+   max-width: 629px;
+   margin: auto;
+   border-radius: 10px;
+   padding: 16px;
+   display: grid;
+   grid-template-columns: auto auto;
+   background-color: #FFFFFF;
+   border-color: rgb(190, 188, 188);
+   box-shadow: #726f6f;
+   top: 300px;
+   align-items: center;
+
+ 
+}
+.imagen{
+ width: fit-content;
+}
+.imagen>img{
+  width: fit-content;
+  max-width: 270px;
+
+}
+.columnaDerecha{
+  width: 80%;
+  margin: auto;
+}
+.columnaDerecha>h3{
+
+  font-size: 27px;
+  line-height: 32px;
+  color: #002b39 !important; 
+  font-weight: 500;
+  margin: 15 px  0 px  10 px  0 px;
+  
+}
+
+.parrafo{
+  width: 100%;
+  font-size:16px;
+  line-height: 21px;
+  color: #002b39;
+  justify-content: start;
+   
+  
+}
+#estrellaDerecha>h6{
+  font-size: 18px;
+  line-height: 21px;
+  color: #1489ff; 
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 8px;
+  justify-self: start;
+
+}
+
+#estrellaDerecha{
+  display: grid;
+  grid-template-columns: auto auto;
+  margin: 0;
+  line-height: 0;
+}
+
+.estrellas{
+  max-height: 21px;
+  justify-self: end;
+}
+.sinespacio{
+  margin: 0;
+}
+h2{
+  font-size: 30px;
+  text-align: center;
+}
+
+#productos{
+
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  max-width: 300;
+  border-radius: 5px;
+  border-color: darkgray;
+}
+
+.productos{
+  margin :  23 px automático;
+  max-width:  1200 px ;
+  padding :  0 px  50 px  0 px  95 px ;
+  display : flex;
+  flex-direction : row;
+  padding : ( 26 px ,  2 vw ,  4 rem );
+}
+
+.Targeta{
+       margin-right: 30px;
+       display: flex;
+       flex-direction : column;
+       border-radius :  10 px ;
+       border-color: rgb(128, 125, 125);
+       box-shadow :  0  10 px  30 px  0  rgb ( 195  213  224  /  50% );
+       background-color: #ffffff;
+       padding: 30px;
+}
+.Targeta>img{
+  width: 100%;
+}
+
+.Targeta>h4{
+   font-size:  35 px ;
+   margin-bottom :  10 px ;
+    text-align : center;
+
+}
+.Targeta>p{
+    font-size :  18 px ;
+    line-height :  1.6 ;
+    text-align: center;
+}
+.contenedor{
+  margin-top: 40px;
+  max-width: 1517px;
+  top: 300px;
+}
+.diagrama{
+  margin: auto;
+  max-width: 862px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: url(IMG/Rectángulo\ 8199.webp) no-repeat;
+  background-size: 89%;
+  background-position: center;
+  background-position-y: 45%;
+
+}
+.columna1{
+  margin-left: -85%;
+box-sizing: border-box;
+margin: auto;
+}
+.columna1>span{
+  text-align: end;
+}
+.columna2{
+  box-sizing: border-box;
+}
+
+.columna3{
+  margin-right: -85%;
+}
